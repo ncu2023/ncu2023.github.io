@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #753911; /* aaron:全網頁的背景色 */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -116,8 +116,8 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: #dd00dd; /* aaron:連絡我表單文字顏色 */
+		font-family: "Source Sans Pro", Helvetica, sans-serif;   /* aaron:網頁字型 */
 		font-size: 17pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -181,7 +181,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #aaaa00;  /* aaron:聯絡表單內的標題顏色 */
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -1782,9 +1782,9 @@ input, select, textarea {
 			width: calc(100% + 0.5em);
 		}
 
-			header.major > :first-child:after {
+			header.major > :first-child:after { /* aaron:banner下方區塊的底線顏色 */
 				content: '';
-				background-color: #000000;
+				background-color: #ceb213;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
@@ -1890,7 +1890,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #d8ca7b; /* aaron:聯絡我表單的文字顏色 */
 		display: block;
 		font-size: 0.8em;
 		font-weight: 600;
@@ -2133,7 +2133,7 @@ input, select, textarea {
 		}
 
 		.icon.alt:before {
-			background-color: #ffffff;
+			background-color: #ffffff; /* icon字型的顏色 */
 			border-radius: 100%;
 			color: #242943;
 			display: inline-block;
@@ -2516,8 +2516,8 @@ input, select, textarea {
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
-		color: #ffffff;
+		box-shadow: inset 0 0 0 2px #f86706; /* aaron:修改按鈕邊框色  */
+		color: #d4611f;  /* aaron:修改按鈕文字色  */
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2629,7 +2629,8 @@ input, select, textarea {
 			input[type="button"].next:before,
 			button.next:before,
 			.button.next:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+				/* aaron:前往作品集按鈕裡面箭頭的顏色 */
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffff00%3b stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
 			}
 
 			input[type="submit"].next:after,
@@ -2637,7 +2638,8 @@ input, select, textarea {
 			input[type="button"].next:after,
 			button.next:after,
 			.button.next:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %239bf1ff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+				/* aaron:前往作品集滑鼠移到箭頭上面的顏色 */
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
 				opacity: 0;
 				z-index: 1;
 			}
@@ -2948,7 +2950,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #795511; /* aaron:作品介紹奇數背景色 */
 		}
 
 			.spotlights > section > .image {
@@ -2979,7 +2981,12 @@ input, select, textarea {
 					width: 100%;
 				}
 
+			/* aaron:作品區塊的標題顏色 */
+			.spotlights > section > .content h3, .spotlights  section  .content .action li a .hi2 {
+				color: #fc8f5c;
+			}
 			.spotlights > section > .content {
+				color: #dc7f7c;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -3011,7 +3018,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #333856;
+				background-color: #64421b;   /* aaron:作品介紹偶數背景色 */
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3125,7 +3132,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #975a13;  /* aaron:最上面選單的背景色 */
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3277,7 +3284,7 @@ input, select, textarea {
 				color: #8d82c4;
 			}
 
-			#header.alt.style3 .logo strong {
+			#header.alt.style3 .logo strong { /* 內頁的 banner顏色 */
 				color: #ec8d81;
 			}
 
@@ -3409,6 +3416,12 @@ input, select, textarea {
 		min-height: 22em;
 		position: relative;
 		top: -3.25em;
+	}
+
+	/* 設定 ID=banner裡面的p標籤文字顏色 */
+	#banner .inner .content .hi {
+		color: #7c3f1c;
+		font-size: 1.5em;
 	}
 
 		#banner:after {
@@ -3610,15 +3623,16 @@ input, select, textarea {
 
 			#main > *:first-child {
 				border-top: 0;
+				height: 350px;  /* aaron:調整banner下面那個區塊高度 */
 			}
 
 			/* aaron:新增一個樣式，指定 inner class內的h2標籤會生效的樣式 */
 			#main > * > .inner h2 {
-				color: yellowgreen;
+				color: rgb(202, 113, 40);
 			}
 
 			#main > * > .inner {
-				color: #c8de6f;   /* aaron:修改網頁下方區塊的文字顏色 */
+				color: #d49d26;   /* aaron:修改網頁下方區塊的文字顏色 */
 				padding: 4em 0 2em 0 ;
 				margin: 0 auto;
 				max-width: 65em;
