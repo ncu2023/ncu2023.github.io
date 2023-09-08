@@ -181,7 +181,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #ffff00;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -2686,7 +2686,7 @@ input, select, textarea {
 			.button.primary:hover,
 			.button.primary:active {
 				background-color: #9bf1ff;
-				color: #242943 !important;
+				/* color: #242943 !important; */
 			}
 
 			input[type="submit"].primary:active,
@@ -2723,6 +2723,7 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-top: 0 !important;
+		color: #000000 !important;
 	}
 
 		.tiles + * {
@@ -2769,9 +2770,16 @@ input, select, textarea {
 			}
 
 				.tiles article h3 a:hover {
-					color: inherit !important;
+					color: #000000 !important;
+					background-color: #37a6cb;
 				}
 
+			.hover-text:hover {
+				color: #000000 !important;
+				font-size: 1.1em !important;
+				z-index: 999;
+				
+			}
 			.tiles article .link.primary {
 				border: 0;
 				height: 100%;
@@ -2810,12 +2818,12 @@ input, select, textarea {
 				z-index: 1;
 			}
 
-			.tiles article:hover:before {
+			/* .tiles article:hover:before {
 				opacity: 0;
-			}
+			} */
 
 			.tiles article.is-transitioning {
-				-moz-transform: scale(0.95);
+				/* -moz-transform: scale(0.95);
 				-webkit-transform: scale(0.95);
 				-ms-transform: scale(0.95);
 				transform: scale(0.95);
@@ -2823,7 +2831,7 @@ input, select, textarea {
 				-webkit-filter: blur(0.5em);
 				-ms-filter: blur(0.5em);
 				filter: blur(0.5em);
-				opacity: 0;
+				opacity: 0; */
 			}
 
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
@@ -2863,10 +2871,10 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.tiles article {
-				padding: 4em 3em 2em 3em ;
+				/* padding: 4em 3em 2em 3em ;
 				height: 30vh;
 				max-height: 30em;
-				min-height: 20em;
+				min-height: 20em; */
 			}
 
 		}
@@ -2885,29 +2893,29 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.tiles article {
+			/* .tiles article {
 				padding: 3em 1.5em 1em 1.5em ;
 				height: 16em;
 				max-height: none;
 				min-height: 0;
-			}
+			} */
 
-				.tiles article h3 {
+				/* .tiles article h3 {
 					font-size: 1.5em;
-				}
+				} */
 
 		}
 
 		@media screen and (max-width: 480px) {
 
-			.tiles {
+			/* .tiles {
 				display: block;
 			}
 
 				.tiles article {
 					height: 20em;
 					width: 100% !important;
-				}
+				} */
 
 		}
 
