@@ -1782,9 +1782,9 @@ input, select, textarea {
 			width: calc(100% + 0.5em);
 		}
 
-			header.major > :first-child:after { /* aaron:banner下方區塊的底線顏色 */
+			header.major > :first-child:after { 
 				content: '';
-				background-color: #ceb213;
+				background-color: #ceb213; /* aaron:banner下方區塊的底線顏色 */
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
