@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Neat Parallax Hero Effect</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- 引入hedaer的css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 引入table的css -->
+    <link rel="stylesheet" href="css/table.css">
+
+    <!-- footer用的 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <!-- 引入Bootstrap元件庫 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<!-- 2. 加上id屬性 -->
+
+<body id="app">
+    <!-- Header -->
+    <div class="hero-nav">
+        <div class="hero-nav__inner">
+            <!-- 4. 測試Vue.js是否引入成功 -->
+            <h1>{{message}}</h1>
+            <div class="hero-nav__button">
+                <a href="#" class="btn"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-body table-container">
+
+        <!-- Bootstrap元件 -->
+        <div class="container">
+            <div class="row">
+                <div class="col pt-2 text-end">
+                    <label for="exampleFormControlInput1" class="form-label">關鍵字:</label>
+                </div>
+                <div class="col">
+                    <input v-model="user_input" type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入要搜尋的站台名稱">
+                </div>
+                <div class="col">
+                    <!-- Bootstrap按鈕 -->
+                    <button type="button" class="btn btn-primary" @click="keyword = user_input">搜尋</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="css-table">
+            <div class="table-header">
+                <div class="header__item"><a id="name" class="filter__link" href="#">名稱</a></div>
+                <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">地址</a></div>
+                <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">可借數量</a>
+                </div>
+                <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">可還空位</a>
+                </div>
+                <div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">車輛總數</a>
+                </div>
+            </div>
+            <div class="table-content">
+                <template v-for="item in ubike_data">
+                    <div v-if="keyword.lenght > 0 || item.sna.includes(keyword)" class="table-row">
+                        <div class="table-data">{{item.sna}}</div>
+                        <div class="table-data">{{item.ar}}</div>
+                        <div class="table-data">{{item.sbi}}</div>
+                        <div class="table-data">{{item.bemp}}</div>
+                        <div class="table-data">{{item.tot}}</div>
+                    </div>
+                </template>
+                <!-- <div class="table-row">
+                    <div class="table-data">item.sna</div>
+                    <div class="table-data">item.ar</div>
+                    <div class="table-data">item.sbi</div>
+                    <div class="table-data">item.bemp</div>
+                    <div class="table-data">item.tot</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- partial:index.partial.html -->
+    <footer class="footer-body footer">
+        <div class="footer__parralax">
+            <div class="footer__parralax-trees"></div>
+            <div class="footer__parralax-moto"></div>
+            <div class="footer__parralax-secondplan"></div>
+            <div class="footer__parralax-premierplan"></div>
+            <div class="footer__parralax-voiture"></div>
+        </div>
+        <div class="footer-container">
+            <div class="footer__columns">
+                <div class="footer__col">
+                    <h3 class="footer__col-title">
+                        <i data-feather="shopping-bag"></i> <span>La boutique</span>
+                    </h3>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    Mentions légales
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    Politique de confidentialité
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    CGV
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    Livraisons et retours
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    Règlement concours
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">
+                        <i data-feather="share-2"></i> <span>Nos réseaux</span>
+                    </h3>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    <i data-feather="youtube"></i><span>Youtube</span>
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    <i data-feather="facebook"></i><span>Facebook</span>
+
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    <i data-feather="instagram"></i><span>Instagram</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">
+                        <i data-feather="send"></i> <span>Contact</span>
+                    </h3>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="mailto:contact.laboiserie@gmail.com" class="footer__nav-link">
+                                    contact.laboiserie@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__copyrights">
+                <p>Réalisé par <a href="https://twitter.com/silvereledev" target="_blank">@SilvereLeDev</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer用的js -->
+    <script src='https://unpkg.com/feather-icons'></script>
+    <script src="./js/footer.js"></script>
+
+    <!-- Header用的 -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <!-- 引入hedaer的Javascript -->
+    <script src="js/index.js"></script>
+
+    <!-- 引入table的Javascript -->
+    <script src="js/table.js"></script>
+
+    <!-- 引入Bootstrap元件庫 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- 1. 引入vue.js框架 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- 引入axios套件 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+
+<!-- 3. 貼上這段語法(請先切換成Options語法) -->
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                message: '桃園Ubike查詢網站',
+                ubike_data: null,  // 準備好要存ubike資料的盒子
+                user_input: '', // 接收使用者輸入
+                keyword: '', // 用來當搜尋條件
+            }
+        },
+        // 在網頁載入完成後打算發生的事情
+        mounted() {
+            // 呼叫桃園市Ubike Open Data API
+            axios.get('https://data.tycg.gov.tw/api/v1/rest/datastore/a1b4714b-3b75-4ff8-a8f2-cc377e4eaa0f?format=json&limit=999')
+                .then((response) => { 
+                    // handle success 成功拿到資料
+                    console.log(response.data.result.records);   /* aaron:指定只保留records裡面的資料就好 */
+                    this.ubike_data = response.data.result.records; // 把拿到的ubike資料傳給vue
+                })
+                .catch(function (error) {
+                    // handle error 發生錯誤
+                    console.log(error);  
+                })
+                .finally(function () {
+                    // always executed 其他需要完成的動作
+                });
+        }
+    }).mount('#app')
+</script>
+
+</html>
