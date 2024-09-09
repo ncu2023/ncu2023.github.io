@@ -181,10 +181,14 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #e71717;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
+	}
+
+	.my-h1 {
+		color: #53e3fb;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1784,7 +1788,7 @@ input, select, textarea {
 
 			header.major > :first-child:after {
 				content: '';
-				background-color: #ffffff;
+				background-color: #2d0ce4;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
@@ -2516,7 +2520,7 @@ input, select, textarea {
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
+		box-shadow: inset 0 0 0 2px #21e921;
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
@@ -3413,9 +3417,9 @@ input, select, textarea {
 			background-color: #242943;
 			content: '';
 			display: block;
-			height: 100%;
+			height: 100%; /* Ctrl - / */
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.5;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3474,7 +3478,7 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
+					font-size: 1.7em;
 					font-weight: 600;
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
