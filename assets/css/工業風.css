@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #723d46;  /* aaron:全站背景色 */
+		background: #6a723d;  /* aaron:全站背景色 */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2165,10 +2165,12 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		height: 400px;   /* aaron:調整作品照片的高度(奇數), 設定為固定高 */
 	}
 
 		.image img {
 			display: block;
+			height: 100%;  /* aaron:調整作品照片的高度, 他可以符合整個版面的高度 */
 		}
 
 		.image.left, .image.right {
@@ -2945,7 +2947,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #50392e;  /* aaron:修改奇數作品介紹背景顏色 */
 		}
 
 			.spotlights > section > .image {
@@ -3007,7 +3009,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #333856;
+				background-color: #723d46; /* aaron:作品區塊的預設背景色 */
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3481,7 +3483,7 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 1.2em;  /* aaron:修改banner描述的文字大小 */
+					font-size: 1.0em;  /* aaron:修改banner描述的文字大小 */
 					font-weight: 600;
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
@@ -3597,7 +3599,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #472d30; /* 修改網頁背景色 */
+		background-color: #723d46; /* 修改網頁背景色 */
 	}
 
 		#main > * {
@@ -3714,9 +3716,12 @@ input, select, textarea {
 		}
 
 /* Footer */
+  #footer {
+	background-color: #50392e;  /* aaron:直接幫footer設定背景色 */
+  }
 
 	#footer .copyright {
-		font-size: 0.8em;
+		font-size: 1.0em;  /* aaron:footer的文字大小 */
 		list-style: none;
 		padding-left: 0;
 	}

@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #723d46;  /* aaron:全站背景色 */
+		background: #6a723d;  /* aaron:全站背景色 */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3481,7 +3481,7 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 1.2em;  /* aaron:修改banner描述的文字大小 */
+					font-size: 1.0em;  /* aaron:修改banner描述的文字大小 */
 					font-weight: 600;
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
@@ -3597,7 +3597,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #472d30; /* 修改網頁背景色 */
+		background-color: #f36f17; /* 修改網頁背景色 */
 	}
 
 		#main > * {
