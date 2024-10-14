@@ -181,7 +181,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #FFD700; /* 改為金色 */
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -3786,6 +3786,27 @@ input, select, textarea {
 
 		}
 
+/* 為首頁大標題添加抖動動畫 */
+@keyframes shaking {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* 使用更具體的選擇器來確保動畫被應用 */
+#banner .major h1.home-title.shaking-title {
+    animation: shaking 1.5s ease-in-out infinite;
+    display: inline-block;
+}
+
 /* Menu */
 
 	#menu {
@@ -3962,4 +3983,29 @@ input, select, textarea {
 /* aaron:這是自己新增的樣式 */
 .my-font-size {
 	font-size: 1.2em;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
