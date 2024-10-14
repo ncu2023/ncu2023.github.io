@@ -3756,6 +3756,8 @@ input, select, textarea {
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		padding-top: 3.25em;
+		width: 100%;
+	
 	}
 
 		#wrapper.is-transitioning {
@@ -3765,8 +3767,9 @@ input, select, textarea {
 		#wrapper > * > .inner {
 			padding: 4em 0 2em 0 ;
 			margin: 0 auto;
-			max-width: 65em;
+			max-width: 165em;
 			width: calc(100% - 6em);
+			
 		}
 
 			@media screen and (max-width: 736px) {
@@ -3784,6 +3787,11 @@ input, select, textarea {
 				padding-top: 2.75em;
 			}
 
+		}
+
+		#wrapper  {
+			width: 100%;
+			background-color: #242943;
 		}
 
 /* 為首頁大標題添加抖動動畫 */
@@ -3985,27 +3993,3 @@ input, select, textarea {
 	font-size: 1.2em;
 }
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-    width: 100%;
-    height: auto;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
