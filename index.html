@@ -1,822 +1,291 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aaron個人網站</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
-  <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
-  <link href="css/main.css?ver=1.1.0" rel="stylesheet">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
+	<title>Aaron的室內作品網站</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
-<body id="top">
-  <header>
-    <div class="profile-page sidebar-collapse">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-        <div class="container">
-          <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Aaron Ho</a>
-            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-              aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
-                class="navbar-toggler-bar bar3"></span></button>
-          </div>
-          <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">關於我</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">專長</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">作品</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">經歷</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">聯繫我</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <div class="page-content">
-    <div>
-      <div class="profile-page">
-        <div class="wrapper">
-          <div class="page-header page-header-small" filter-color="green">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')">
-            </div>
-            <div class="container">
-              <div class="content-center">
-                <div class="cc-profile-image"><a href="#"><img src="images/anthony.jpg" alt="Image" /></a></div>
-                <div class="h2 title">Aaron Ho</div>
-                <p class="category text-white">前端工程師、SRE、講師</p><a class="btn btn-primary smooth-scroll mr-2"
-                  href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">錄用我</a><a
-                  class="btn btn-primary" href="aaron履歷.doc" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">下載履歷</a>
-              </div>
-            </div>
-            <!-- <div class="section">
-              <div class="container">
-                <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="#"
-                    rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a
-                    class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip"
-                    title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a
-                    class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip"
-                    title="Follow me on Google+"><i class="fa fa-google-plus"></i></a><a
-                    class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip"
-                    title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="section" id="about">
-        <div class="container">
-          <div class="card" data-aos="fade-up" data-aos-offset="10">
-            <div class="row">
-              <!-- aaron: 左半邊-->
-              <div class="col-lg-6 col-md-12">
-                <div class="card-body">
-                  <div class="h4 mt-0 title">基本資料</div>
-                  <div class="row">
-                    <div class="col-sm-4"><strong class="text-uppercase">年齡:</strong></div>
-                    <div class="col-sm-8">24</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                    <div class="col-sm-8">aaron@company.com</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">電話:</strong></div>
-                    <div class="col-sm-8">+886-921-123-456</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">地址:</strong></div>
-                    <div class="col-sm-8">健行路229號</div>
-                  </div>
-                  
-                </div>
-              </div>
+<body class="is-preload">
 
-              <!-- aaron:右半邊 -->
-              <div class="col-lg-6 col-md-12">
-                <div class="card-body">
-                  <div class="h4 mt-0 title">&nbsp;</div> <!-- aaron: &nbsp; 代表顯示一個空白字元 -->
-                  <div class="row">
-                    <div class="col-sm-4"><strong class="text-uppercase">交通工具:</strong></div>
-                    <div class="col-sm-8">機車、汽車</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">語言:</strong></div>
-                    <div class="col-sm-8">中文、英文、日文 都不會</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">身家背景:</strong></div>
-                    <div class="col-sm-8">富二代</div>
-                  </div>
-                  
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="skill">
-        <div class="container">
-          <div class="h4 text-center mb-4 title">專業技能</div>
-          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">AutoCAD</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">SketchUp</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 100%;"></div><span class="progress-value">100%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">隨便打</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-              <!-- <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">Photoshop</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 ml-auto mr-auto">
-              <div class="h4 text-center mb-4 title">作品</div>
-              <div class="nav-align-center">
-                <!-- aaron:
-                       1. 一對li標籤就是一顆按鈕
-                       2. active樣式用來決定預設哪一顆按鈕要亮起來
-                       3. href屬性值如果是#字號，代表同業面跳動
-                -->
-                <ul class="nav nav-pills nav-pills-primary" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-                  <li class="nav-item"><a class="nav-link " data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
-                  
-                  <!-- aaron:新增一類 -->
-                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Chip" role="tablist"><i class="fa fa-microchip" aria-hidden="true"></i></a></li>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content gallery mt-5">
-            <!-- aaron:第一個分類的作品start -->
-            <div class="tab-pane active" id="web-development">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">作品名稱</div>
-                            <p>作品描述</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Startup Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                      <!-- aaron:一個作品的結構start -->
-                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                        <a href="#web-development">
-                          <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image" />
-                            <figcaption>
-                              <div class="h4">Startup Project</div>
-                              <p>Web Development</p>
-                            </figcaption>
-                          </figure>
-                        </a></div>
-                      <!-- aaron:一個作品的結構end -->
-                  </div>
-                  <div class="col-md-4">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Food Order Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Web Advertising Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <!-- aaron:自己新增的第三行作品start -->
-                  <div class="col-md-4">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Food Order Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Web Advertising Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <!-- aaron:自己新增的第三行作品end -->
-                </div>
-              </div>
-            </div>
-            <!-- aaron:第一個分類的作品end -->
+		<!-- Header -->
+		<header id="header" class="alt">
+			<a href="index.html" class="logo"><strong>Aaron</strong> <span>的室內作品網站</span></a>
+			<!-- 我的筆記 <nav>
+							<a href="#menu">Menu</a>
+						</nav> -->
+		</header>
 
-            <div class="tab-pane" id="graphic-design" role="tabpanel">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Triangle Pattern</div>
-                            <p>Graphic Design</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Abstract Umbrella</div>
-                            <p>Graphic Design</p>
-                          </figcaption>
-                        </figure>
-                      </a></div> -->
-                  </div>
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Cube Surface Texture</div>
-                            <p>Graphic Design</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Abstract Line</div>
-                            <p>Graphic Design</p>
-                          </figcaption>
-                        </figure>
-                      </a></div> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="Photography" role="tabpanel">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-12"> <!-- aaron:這個類型改12, 會變成每張作品都佔據整個卡片寬度 -->
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Photoshoot</div>
-                            <p>Photography</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Wedding Photoshoot</div>
-                            <p>Photography</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Beach Photoshoot</div>
-                            <p>Photography</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Nature Photoshoot</div>
-                            <p>Photography</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+		<!-- Banner -->
+		<section id="banner" class="major">
+			<div class="inner">
+				<header class="major">
+					<h1 class="home-title shaking-title">Aaron的室內作品網站</h1>
+				</header>
+				<div class="content">
+					<p>山崩地裂<br />
+						嘔心瀝血</p>
+					<ul class="actions">
+						<li><a href="#one" class="button next scrolly">開始</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- 輪播圖 -->
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="/images/工業風封面.jpg" alt="工業風格圖片1">
+			</div>
+			<div class="mySlides fade">
+				<img src="/images/無印風封面.jpg" alt="工業風格圖片2">
+			</div>
+			<div class="mySlides fade">
+				<img src="/images/地中海風封面.jpg" alt="工業風格圖片3">
+			</div>
+			<div class="mySlides fade">
+				<img src="/images/童話風封面.jpg" alt="工業風格圖片4">
+			</div>
+			<div class="mySlides fade">
+				<img src="/images/岔及.jpg" alt="工業風格圖片5">
+			</div>
+			<a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next1" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<style>
+			.slideshow-container {
+				position: relative;
+				height: 250px;
+				overflow: hidden;
+				background-color: #000;
+				width: 100%;
+			}
 
-            <!-- aaron:第四個分類的作品start -->
-            <div class="tab-pane" id="Chip">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/reference-image-1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">作品名稱</div>
-                            <p>作品描述</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/reference-image-2.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Startup Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                      <!-- aaron:一個作品的結構start -->
-                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                        <a href="#web-development">
-                          <figure class="cc-effect"><img src="images/reference-image-3.jpg" alt="Image" />
-                            <figcaption>
-                              <div class="h4">Startup Project</div>
-                              <p>Web Development</p>
-                            </figcaption>
-                          </figure>
-                        </a></div>
-                      <!-- aaron:一個作品的結構end -->
-                  </div>
-                  <div class="col-md-4">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/reference-image-1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Food Order Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/reference-image-2.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Web Advertising Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <!-- aaron:自己新增的第三行作品start -->
-                  <div class="col-md-4">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/reference-image-1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Food Order Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/reference-image-3.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Web Advertising Project</div>
-                            <p>Web Development</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <!-- aaron:自己新增的第三行作品end -->
-                </div>
-              </div>
-            </div>
-            <!-- aaron:第四個分類的作品end -->
+			.mySlides img {
+				width: 100%;
+				height: 250px;
+				object-fit: cover;
+			}
+
+			.prev1,
+			.next1 {
+				position: absolute;
+				top: 50%;
+				/* transform: translateY(-50%);/ */
+				padding: 16px;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+
+				user-select: none;
+				background-color: rgba(0, 0, 0, 0.8);
+				text-decoration: none;
+				border: 0px;
+
+			}
+
+			.prev1 {
+				margin-left: 10px;
+				border-radius: 10px 3px 3px 10px;
+			}
+
+			.next1 {
+				right: 0;
+				border-radius: 3px 10px 10px 3px;
+				margin-right: 10px;
+			}
+		</style>
 
 
-          </div>
-        </div>
-      </div>
-      <div class="section" id="experience">
-        <div class="container cc-experience">
-          <div class="h4 text-center mb-4 title">經歷</div>
+		<script src="slideshow.js"></script>
 
-          <!-- aaron:一組經歷卡片start -->
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>2020 - 現在</p>
-                  <div class="h5">健行科技大學</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">講師</div>
-                  <p>混口飯吃</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- aaron:一組經歷卡片end -->
-          
-          <!-- aaron:一組經歷卡片start -->
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>2020 - 現在</p>
-                  <div class="h5">健行科技大學</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">講師</div>
-                  <p>混口飯吃</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- aaron:一組經歷卡片end -->
+		<!-- Main -->
+		<div id="main">
 
-          <!-- aaron:一組經歷卡片start -->
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>2020 - 現在</p>
-                  <div class="h5">健行科技大學</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">講師</div>
-                  <p>混口飯吃</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- aaron:一組經歷卡片end -->
+			<!-- One -->
+			<section id="one" class="tiles">
+				<article>
+					<span class="image">
+						<img src="images/工業風封面.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="工業風.html" class="link">工業風</a></h3>
+						<p>Aaron的工業風。很工業。</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/現代風.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="現代風.html" class="link">現代風</a></h3>
+						<p>Aaron的現代風。很現代。</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/童話風封面.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="童話風.html" class="link">童話風</a></h3>
+						<p>我的童話風，很童話</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/岔及.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="侘疾風.html" class="link">侘寂風</a></h3>
+						<p>我的侘疾風，很侘疾</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/無印風封面.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="無印風.html" class="link">無印風</a></h3>
+						<p>我的無印風，很無印</p>
+					</header>
+				</article>
+				<!-- <article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Etiam</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article> -->
+			</section>
 
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
+			<!-- Two -->
+			<section id="two">
+				<div class="inner">
+					<header class="major">
+						<h2>綠色建築</h2>
+					</header>
+					<!-- aaron: 新增自訂文字大小 -->
+					<p class="my-font-size">綠色建築或綠建築（英語：green
+						building），是指本身及其使用過程在生命週期中，如選址、設計、建設、營運、維護、翻新、拆除等各階段皆達成環境友善與資源有效運用的一種建築[1]。換言之，綠色建築在設計上試圖從人造建築與自然環境之間取得一個平衡點。這需要設計團隊、建築師、工程師以及客戶在專案的各階段中緊密合作。而綠色建築的實作擴充並補足古典建築設計對於經濟效益、實用性、耐用度以及舒適度方面的不足。
+					</p>
+					<ul class="actions">
+						<li><a href="https://gb.tabc.org.tw/" target="_blank" class="button next">前往綠建築標章</a></li>
+					</ul>
+				</div>
+			</section>
 
-                  <p>April 2014 - March 2016</p>
-                  <div class="h5">WebNote</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Web Developer</div>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>April 2013 - February 2014</p>
-                  <div class="h5">WEBM</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Intern</div>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="container cc-education">
-          <div class="h4 text-center mb-4 title">學歷</div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2010/9 - 2015/9</p>
-                  <div class="h5">碩士</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">資訊工程系</div>
-                  <p class="category">台灣大學</p>
-                  <p>混個文憑</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2009 - 2013</p>
-                  <div class="h5">Bachelor's Degree</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Bachelor of Computer Science</div>
-                  <p class="category">University of Computer Science</p>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2007 - 2009</p>
-                  <div class="h5">High School</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Science and Mathematics</div>
-                  <p class="category">School of Secondary board</p>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
+		</div>
 
+		<!-- Contact -->
+		<section id="contact">
+			<div class="inner">
+				<section>
+					<!-- aaron:這一行需要加上onsubmit="return mailto()" -->
+					<form method="post" action="#" onsubmit="return mailto()">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">姓名</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">留言</label>
+								<textarea name="message" id="message" rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="送出訊息" class="primary" /></li>
+							<li><input type="reset" value="清除" /></li>
+						</ul>
 
-      <!-- aaron:自傳start -->
-      <div class="section" id="about">
-        <div class="container">
-          <div class="h4 mb-4 text-center title">自傳</div>
-          <div class="card" data-aos="fade-up" data-aos-offset="10">
-            <div class="row">
-              <!-- aaron: 左半邊-->
-              <div class="col-lg-12 col-md-12">
-                <div class="card-body">
-                  
-                  <p>您好</p>
-                  <p>自傳怎麼寫，一直是許多求職者的難題，無論你是剛出新鮮人、職場老手、甚至準備申請學校的高中生，都有可能被要求繳交自傳。自傳撰寫技巧也是每個人生涯中勢必要學習的。你可能會覺得：「只要有履歷，將自己的專業與能力呈現給人資就好，為何一定要撰寫工作自傳呢？」「自傳又臭又長，大部分的面試官對履歷自傳的注意力只有 30 秒，應徵公司真的有時間看自傳嗎？」</p>
+						<!-- 呼叫email程式的語法:start -->
+						<script>
+							function mailto() {
+								name = document.getElementsByName('name')[0].value; // 把使用者輸入的名稱拿出來用
+								email = document.getElementsByName('email')[0].value; // 把使用者輸入的email拿出來用
+								message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A'); // 把使用者輸入的內容拿出來用
+								window.location.href = "mailto:xxxxxxxxxx@gmail.com?subject=我沒有問題&body=您好, 我是" + name + ":%0D%0A" + message;
+								return false;
+							}
+						</script>
+						<!-- 呼叫email程式的語法:end -->
 
-                  <p>事實上，自傳就像一塊敲門磚，當你的履歷有被選上，公司或學校想進一步了解你，求職自傳就是最好的自我行銷，如何妥善包裝、整理，給 HR 良好的第一印象，同時展現出個人特質呢？，本篇將會提到：能快速上手的自傳格式、成功求職自傳範例（大學申請自傳範例／有工作經驗自傳範例）、自傳設計與排版格式等。準備好了嗎？那我們就開始囉！</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- aaron:自傳end -->
+					</form>
+				</section>
+				<section class="split">
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-envelope"></span>
+							<h3>Email</h3>
+							<a href="#">information@untitled.tld</a>
+						</div>
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon brands alt fa-facebook"></span> <!-- aaron:修改icon字型 -->
+							<h3>LINE粉絲團</h3>
+							<span><a href="https://tw.linebiz.com/column/premium-id-exposure-naming/?utm_source=SEM&utm_medium=cpa&utm_campaign=pid&gad_source=1&gclid=EAIaIQobChMInZTn_r_GiAMVnV0PAh1h8xWhEAAYASAAEgLFD_D_BwE"
+									target="_blank">掃描 QRCode</a></span>
+						</div>
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-home"></span>
+							<h3>地址</h3>
+							<span>桃園市中壢區<br />
+								健行路229</span>
+						</div>
+					</section>
+				</section>
+			</div>
+		</section>
 
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+				</ul>
+				<ul class="copyright">
+					<li>&copy; copyright</li>
+					<li>Design: <a href="https://html5up.net">https://www.aaronlife.com</a></li>
+				</ul>
+			</div>
+		</footer>
 
+	</div>
 
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-
-      <div class="section" id="reference">
-        <div class="container cc-reference">
-          <div class="h4 mb-4 text-center title">推薦人</div>
-          <div class="card" data-aos="zoom-in">
-            <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
-                <li data-target="#cc-Indicators" data-slide-to="1"></li>
-                <li data-target="#cc-Indicators" data-slide-to="2"></li>
-                
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg"
-                        alt="Image" />
-                      <div class="h5 pt-2">名字</div>
-                      <p class="category">CEO / 鴻海</p>
-                    </div>
-                    <div class="col-lg-10 col-md-9">
-                      <p>這個人很棒</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg"
-                        alt="Image" />
-                      <div class="h5 pt-2">推薦人2號</div>
-                      <p class="category">CEO / 台積電</p>
-                    </div>
-                    <div class="col-lg-10 col-md-9">
-                      <p>這個人很棒</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg"
-                        alt="Image" />
-                      <div class="h5 pt-2">推薦人3號</div>
-                      <p class="category">CEO / 聯發科</p>
-                    </div>
-                    <div class="col-lg-10 col-md-9">
-                      <p>這個人很棒</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="contact">
-        <div class="cc-contact-information" style="background-image: url('images/staticmap.png'); background-repeat: no-repeat; background-size: cover;">
-          <div class="container">
-            <div class="cc-contact">
-              <div class="row">
-                <div class="col-md-9">
-                  <div class="card mb-0" data-aos="zoom-in">
-                    <div class="h4 text-center title">聯絡我</div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <form action="https://formspree.io/your@email.com" method="POST">
-                            <div class="p pb-3"><strong>來聯絡我</strong></div>
-                            <div class="row mb-3">
-                              <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i
-                                      class="fa fa-user-circle"></i></span>
-                                  <input class="form-control" type="text" name="name" placeholder="稱呼"
-                                    required="required" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mb-3">
-                              <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i
-                                      class="fa fa-file-text"></i></span>
-                                  <input class="form-control" type="text" name="Subject" placeholder="標題"
-                                    required="required" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mb-3">
-                              <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i
-                                      class="fa fa-envelope"></i></span>
-                                  <input class="form-control" type="email" name="_replyto" placeholder="E-mail"
-                                    required="required" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mb-3">
-                              <div class="col">
-                                <div class="form-group">
-                                  <textarea class="form-control" name="message" placeholder="訊息"
-                                    required="required"></textarea>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col">
-                                <button class="btn btn-primary" type="submit">送出</button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <p class="mb-0"><strong>地址 </strong></p>
-                          <p class="pb-2">140, City Center, New York, U.S.A</p>
-                          <p class="mb-0"><strong>Phone</strong></p>
-                          <p class="pb-2">+1718-111-0011</p>
-                          <p class="mb-0"><strong>Email</strong></p>
-                          <p>anthony@company.com</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer">
-    <!-- <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x "
-          aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x "
-          aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x"
-          aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x "
-          aria-hidden="true"></i></a></div>
-    <div class="h4 title text-center">Anthony Barnett</div> -->
-    <div class="text-center text-muted">
-      <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com"
-          target="_blank">TemplateFlip</a></p>
-    </div>
-  </footer>
-  <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
-  <script src="js/core/popper.min.js?ver=1.1.0"></script>
-  <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
-  <script src="js/now-ui-kit.js?ver=1.1.0"></script>
-  <script src="js/aos.js?ver=1.1.0"></script>
-  <script src="scripts/main.js?ver=1.1.0"></script>
 </body>
 
 </html>
